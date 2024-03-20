@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var HttpStatus = require("../modules/status_codes");
+var modules = require("../modules");
+let { HttpStatus } = modules;
 /* GET users listing. */
 router.get("/", function (req, res, next) {
   return res.status(HttpStatus.OK).send({

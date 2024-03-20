@@ -1,4 +1,4 @@
-module.exports = HttpStatus = {
+const HttpStatus = {
   CONTINUE: 100,
   SWITCHING_PROTOCOLS: 101,
   PROCESSING: 102,
@@ -47,4 +47,8 @@ module.exports = HttpStatus = {
   SERVICE_UNAVAILABLE: 503,
   GATEWAY_TIMEOUT: 504,
   HTTP_VERSION_NOT_SUPPORTED: 505,
+};
+
+module.exports = {
+  HttpStatus: HttpStatus,
 };
